@@ -1,4 +1,4 @@
-# Day 79 Task | Cohort 2.0
+# Day 83 Task | Cohort 2.0
 
 This repository contains the work completed as part of **Day 77** in **Sheryians Coding School – Cohort 2.0**.  
 The focus of this task was to build a **Pokédex-style application using React**, with emphasis on API integration, asynchronous data fetching, component-based architecture, and a clean card-based UI using Tailwind CSS.
