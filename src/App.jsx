@@ -8,7 +8,6 @@ import Section from './pages/Section'
 const App = () => {
   const [theme, setTheme] = useState('light')
 
-
   return (
     <div>
       <Navbar theme={theme} setTheme={setTheme} />
