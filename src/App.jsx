@@ -2,15 +2,16 @@ import React, { useContext, useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Navbar from './pages/Navbar'
+import Products from './pages/Products'
 
 const App = () => {
-  const [theme, setTheme] = useState('light')
 
   return (
     <div>
-      <Navbar theme={theme} setTheme={setTheme} />
+      <Navbar/>
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/products' element={<Products />} />
       </Routes>
     </div>
   )
