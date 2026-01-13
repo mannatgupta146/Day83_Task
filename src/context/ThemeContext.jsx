@@ -2,7 +2,7 @@ import React, { createContext, useState } from 'react'
 
 export const ThemeDataContext = createContext()
 
-const ThemeContext = () => {
+const ThemeContext = (props) => {
 
     const [theme, setTheme] = useState('light')
 
