@@ -50,6 +50,10 @@ const Navbar = ({ theme, setTheme }) => {
       <NavLink to="/about" className={navStyle}>
         About
       </NavLink>
+
+      <NavLink to="/section" className={navStyle}>
+        Section
+      </NavLink>
     </div>
   )
 }
