@@ -6,21 +6,18 @@ const Home = () => {
 
   const navigate = useNavigate()
 
-  const { productData, getData } = useContext(ProductDataContext)
-
-
   return (
     <div>
       home
 
-      <button onClick={()=>{
+      <button 
+      className='bg-emerald-500 px-4 py-2 rounded-md'
+      onClick={()=>{
         navigate('/products')
-      }}>Get all</button>
-
-      <button onClick={()=>{
-        getData()
-      }}>Get items</button>
-
+      }}
+      >
+        Explore Products
+      </button>
       
     </div>
   )
