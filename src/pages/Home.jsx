@@ -6,7 +6,7 @@ const Home = () => {
   const navigate = useNavigate()
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-gray-100 via-white to-gray-200">
+    <div className="min-h-[calc(100vh-4rem)] overflow-hidden bg-linear-to-br from-gray-100 via-white to-gray-200">
 
       <div className="max-w-7xl mx-auto px-8 py-24 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
 
@@ -29,9 +29,7 @@ const Home = () => {
               Explore Products
             </button>
 
-            <button
-              className="px-10 py-4 border border-gray-300 rounded-2xl text-lg font-medium hover:bg-gray-100 transition"
-            >
+            <button className="px-10 py-4 border border-gray-300 rounded-2xl text-lg font-medium hover:bg-gray-100 transition">
               Learn More
             </button>
           </div>

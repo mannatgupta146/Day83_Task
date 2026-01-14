@@ -3,20 +3,23 @@ import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <nav className="w-full bg-white border-b border-gray-200 shadow-sm">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <nav className="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md border-b border-gray-200 shadow-sm z-50">
+      <div className="max-w-7xl mx-auto px-8 h-16 flex items-center justify-between">
 
-        <h1 className="text-xl font-semibold tracking-wide text-gray-800">
+        {/* Logo */}
+        <h1 className="text-2xl font-bold tracking-tight text-gray-900">
           MyStore
         </h1>
 
-        <div className="flex gap-8">
+        {/* Links */}
+        <div className="flex items-center gap-10">
           <NavLink
             to="/"
             className={({ isActive }) =>
-              `font-medium transition ${
+              `relative text-sm font-medium transition
+              ${
                 isActive
-                  ? 'text-black border-b-2 border-black pb-1'
+                  ? 'text-black after:absolute after:-bottom-2 after:left-0 after:w-full after:h-0.5 after:bg-black after:rounded'
                   : 'text-gray-600 hover:text-black'
               }`
             }
@@ -27,9 +30,10 @@ const Navbar = () => {
           <NavLink
             to="/products"
             className={({ isActive }) =>
-              `font-medium transition ${
+              `relative text-sm font-medium transition
+              ${
                 isActive
-                  ? 'text-black border-b-2 border-black pb-1'
+                  ? 'text-black after:absolute after:-bottom-2 after:left-0 after:w-full after:h-0.5 after:bg-black after:rounded'
                   : 'text-gray-600 hover:text-black'
               }`
             }
